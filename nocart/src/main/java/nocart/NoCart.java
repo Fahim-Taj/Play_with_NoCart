@@ -95,8 +95,8 @@ public class NoCart extends BaseClass
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.inCity))).sendKeys(city);
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.inStrtOne))).sendKeys(street1);
 
-                // WebElement trdscroll =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.scrollAdd)));
-                // Scroll.performScroll(driver, trdscroll, 0.6, 0.4, 100);
+                WebElement trdscroll =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.scrollAdd)));
+                Scroll.performScroll(driver, trdscroll, 0.6, 0.4, 100);
 
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.inStrtTwo))).sendKeys(street2);                
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(CommonID.inZipCode))).sendKeys(zipCode);
